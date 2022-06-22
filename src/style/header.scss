@@ -1,0 +1,97 @@
+@import "_variables.scss";
+
+.header{
+   height: 100vh;
+   background: $bgGradient;
+   color: $txtColor;
+}
+
+.hero_section{
+   display: flex;
+   font-weight: 600;
+   letter-spacing: 2px;
+   width: 70%;
+   margin: 0 auto;
+   padding-top: 2em;
+
+   .hero_text{
+      width: 50%;
+      padding: 2em;
+      font-size: .7em;
+
+      .counter{
+         background-color: rgba(116, 138, 158, 0.333);
+         margin-left:1em ;
+         height: 2em;
+         width: 13em;
+         font-size: 1em;
+         text-align: center;
+         padding: .7em;
+         margin-top: 1em ;
+         border-radius: .2em;
+         border: none;
+
+         span{
+            padding: .3em;
+         }
+      }
+   }
+
+   .extra_bold{
+      margin-block: .7em;
+      font-size: 3em;
+   }
+
+   ul{
+      list-style-image: url('../components/assets/success1.svg');
+      list-style-position: inside;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      font-weight: 600;
+   }
+
+   button{
+      height: 3em;
+      width: 13em;
+      text-align: center;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      margin-top: 1em ;
+      border-radius: .2em;
+      border: none;
+      background-color: $btnColor;
+      font-size: 1em;
+      box-shadow: 1px 1px 1px 1px rgba(225, 219, 219, 0.278);
+      font-weight: 600;
+      color: $txtColor;
+      transition: all 200ms ease-in-out;
+
+      &:hover{
+         background-color: rgb(214, 98, 117);
+      }
+   }
+
+   p{
+      margin-top: 1em;
+      font-size: .8em;
+      width: 22em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      span{
+         padding-top: 2px;
+      }
+   }
+}
+
+.partner_company ul{
+   display: flex;
+   width: 70%;
+   margin: 0 auto;
+
+   li{
+      list-style: none;
+      padding: 1em;
+   }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// Fonts
+$generalFont: "Nunito", sans-serif;
+$fallbckFont: "Baskerville Old Face", "Bahnschrift", sans-serif;
+
+
+// colors
+$bgColor: rgb(8,23,157);
+$bgSecond: #f4eaea;
+$bgGradient: linear-gradient(180deg,  rgb(8,23,157) 39%, rgba(93,130,223,1) 92%) ;
+
+$txtColor: #fff;
+$txtColorQuDrk: darken(#002244, 20);
+$txtColorDrk: darken(#002244, 70);
+
+$btnColor: #f41e39;
+
+//gradients
+
+$ntTooCool: linear-gradient(90deg, rgba(0,142,151,1) 14%, rgba(188,63,74,1) 99%);
+
+
+//font sizes
+$ftSize: 1.4em;
+$ftSizeSm: .8em;
+$ftSizeLg: 2.1em;
+
+
+//mixins

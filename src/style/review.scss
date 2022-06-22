@@ -1,0 +1,131 @@
+@import './variables';
+
+.review{
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+   padding-bottom: 3em;
+   // margin-bottom: 3em;
+
+   h2{
+      font-size: $ftSizeLg;
+      font-weight: 700;
+      margin-bottom: .61em;
+   }
+
+   h6{
+      font-size: .8em;
+      font-weight: 300;
+      // margin-bottom: 1em;
+   }
+
+   .review_tabs ul{
+      display: flex;
+      margin: 1.5em;
+      width: 60%;
+      margin: 1em auto;
+      // align-items: center;
+      justify-content: space-between;
+      // background-color: red;
+
+      li{
+         font-size: .8em;
+         list-style: none;
+         padding-block: 1em;
+         width: 20%;
+         color: rgb(95, 79, 79);
+         font-weight: 700;
+         font-size: .7em;
+
+         &.active{
+            color: rgba(32, 97, 146, 0.867);
+            border-bottom: 2px solid rgba(32, 97, 146, 0.867);
+         }
+
+         &:hover{
+            background-color: rgba(174, 201, 241, 0.244);
+         }
+      }
+
+   }
+
+   .review_section{
+      margin: 0 auto;
+      display: flex;
+      font-size: $ftSizeSm;
+      width: 90%;
+
+      .user_review{
+         width: 60%;
+         margin: .6em;
+         padding: .5em;
+         border: 2px solid rgba(174, 201, 241, 0.244);
+         box-shadow: 1px 1px 1px .1em rgba(174, 201, 241, 0.244);
+         border-radius: 2px;
+
+         .user_detail{
+            display: flex;
+            padding: 1em;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            img{
+               border-radius: 50%;
+            }
+
+            .detail{
+               margin-inline: 1em;
+               text-align: left;
+               display: inherit;
+               justify-content: center;
+               align-self: center;
+
+
+               .twitter_icon{
+                  position: absolute;
+                  right: .3em;
+                  top: 1;
+               }
+
+               h5{
+                  font-size: .9em;
+                  font-weight: 600;
+               }
+            }
+         }
+
+         .review_content{
+            margin-block: 1em;
+            text-align: left;
+            padding: .3em;
+            height: 9em;
+            font-size: 1em;
+            line-height: 1.5em;
+         }
+
+         p{
+            font-size: .7em;
+            text-align: left;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2em;
+            // justify-content: space-evenly;
+
+            img{
+               padding-inline: 1em;
+            }
+         }
+
+         .twt_msg{
+            padding-inline: 1em;
+            text-align: left;
+            height: auto;
+         }
+      }
+
+
+   }
+}

@@ -1,0 +1,47 @@
+@import './variables';
+
+.info_section{
+   height: 80vh;
+   display: flex;
+   padding: 2em;
+   width: 80%;
+   margin: 0 auto;
+
+   .section_detail{
+      width: 50%;
+      padding: 2em;
+      margin-left: 2em;
+
+      h3{
+         font-size: $ftSize;
+         font-weight: 800;
+      }
+
+      p{
+         font-size: .8em;
+         font-weight: 300;
+         line-height: 1.6em;
+      }
+
+      p.apps > span{
+         margin: .2em;
+      }
+
+      button{
+         background-color: rgb(66, 112, 228);
+         width:auto;
+         height: 3em;
+         color: $txtColor;
+         font-size: $ftSizeSm;
+         border: none;
+         border-radius: 5px;
+         font-weight: 600;
+         transition: all 500ms ease-in-out;
+         padding: 1em;
+
+         &:hover{
+            background-color: rgba(66, 112, 228, 0.631);
+         }
+      }
+   }
+}

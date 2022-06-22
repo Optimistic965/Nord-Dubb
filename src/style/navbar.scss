@@ -1,0 +1,138 @@
+@import "_variables.scss";
+
+.navbar{
+   background-color: $bgColor;
+   display: flex;
+   font-size: $ftSizeSm;
+   height: auto;
+   padding: 1em;
+   position: sticky;
+   top: 0;
+   margin-top: 0;
+
+   .logo1{
+      padding-right: 1.2em ;
+      margin-right: 1.2em;
+      border-right: 1px solid $bgSecond;
+   }
+
+   .links{
+      display: flex;
+      align-items: center;
+
+      .nav_links ul{
+         display: inline-flex;
+         list-style: none;
+         margin-right: 22em;
+
+         a{
+            color: $txtColor;
+            text-decoration: none;
+            padding-inline: 1.2em;
+            font-weight: 600;
+            font-size: $ftSizeSm;
+            transition: color 500ms ease-in;
+
+            &:hover{
+               opacity: .5;
+            }
+         }
+
+      }
+
+      .action_links {
+         display: flex;
+         align-items: center;
+         // border: 2px solid red;
+         // padding-top: 1em;
+
+         ul{
+            display: inline-flex;
+            list-style: none;
+            justify-content: center;
+            margin-right: .5em;
+
+            li{
+               padding-top: .3em;
+            }
+
+            .action_btn{
+            height: 2em;
+            background-color: #D2283E;
+            color: $txtColor;
+            text-align: center;
+            padding-top: .2em;
+            border-radius: 5px;
+            margin-right: .3em;
+            transition: all 200ms ease-in-out;
+
+            &:hover{
+               background-color: rgb(214, 98, 117);
+            }
+         }
+
+         a{
+            color: $txtColor;
+            text-decoration: none;
+            padding-inline: 1.2em;
+            font-weight: 600;
+            font-size: $ftSizeSm;
+            transition: color 500ms ease-in;
+
+            &:hover{
+               opacity: .4;
+            }
+         }
+       }
+
+       .burger{
+         padding-bottom: .1em ;
+         padding: .6em;
+         transition: all 200ms ease;
+
+         &:hover{
+            background-color: rgba(240, 248, 255, 0.2);
+            border-radius: 50%;
+         }
+       }
+
+       .burger_nav{
+         background-color: $txtColor;
+         color: black;
+         display: flex;
+         flex-direction: column;
+         height: 20em;
+         border: none;
+         border-radius: 2px;
+         width: 17em;
+         padding-block: .5em;
+         position: absolute;
+         top: 3.4em;
+         right: 3.2em;
+      visibility: hidden;
+
+         li{
+            height: 5em;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            font-size: 1em;
+            font-weight: 600;
+
+            span{
+               font-size: $ftSizeSm;
+               font-weight: 600;
+               color: rgb(129, 134, 143);
+            }
+
+            &:hover{
+               background-color: rgb(217, 222, 227);
+            }
+         }
+       }
+      }
+   }
+}
+
+

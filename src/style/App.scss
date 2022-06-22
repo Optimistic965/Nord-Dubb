@@ -1,0 +1,26 @@
+@import "_variables.scss";
+
+.ip{
+   color: $txtColor;
+   font-size: .6em;
+   text-align: center;
+   font-weight: 600;
+   background-color: black;
+   height: 2em;
+   padding-top: .3em;
+
+   span{
+      color: $btnColor;
+   }
+}
+
+.navbar{
+   background-color: $bgColor;
+   display: flex;
+   font-size: $ftSizeSm;
+   height: auto;
+   padding: 1em;
+   position: sticky;
+   top: 0;
+   margin-top: 0;
+}
